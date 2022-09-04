@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import "../style/Carousel.css";
-import PauseIcon from './pause.svg';
+import PauseIcon from "./pause.svg";
 
 function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
@@ -76,7 +76,14 @@ function Carousel({ images }) {
               ></div>
             );
           })}
-          <img className="pause-icon" src={PauseIcon} alt="pause-icon" onClick={()=> setAutoPlay(false)}/>
+          <div>
+            <img
+              className="pause-icon"
+              src={PauseIcon}
+              alt="pause-icon"
+              onClick={() => setAutoPlay(false)}
+            />
+          </div>
         </div>
       </div>
     </div>
