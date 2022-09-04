@@ -10,6 +10,7 @@ function Carousel({ images }) {
 
   useEffect(() => {
     timeOut =
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       autoPlay &&
       setTimeout(() => {
         slideRight();
