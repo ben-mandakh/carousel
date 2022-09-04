@@ -86,6 +86,7 @@
     background-color: aqua;
     border: black solid 1px;
     border-radius: 100%;
+    margin-top: 24px;
   }
   
   .pagination_dot {

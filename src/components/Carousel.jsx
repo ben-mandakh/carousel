@@ -24,7 +24,6 @@ function Carousel({ images }) {
   const slideLeft = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
   };
-  console.log(current);
   return (
     <div
       className="carousel"
@@ -44,7 +43,7 @@ function Carousel({ images }) {
             <div
               key={index}
               className={
-                index == current
+                index === current
                   ? "carousel_card carousel_card-active"
                   : "carousel_card"
               }
@@ -68,11 +67,11 @@ function Carousel({ images }) {
               <div
                 key={index}
                 className={
-                  index == current
+                  index === current
                     ? "pagination_dot pagination_dot-active"
                     : "pagination_dot"
                 }
-                onClick={() => setCurrent(index)}
+                onClick={() => setCurrent(index) && setAutoPlay(false)}
               ></div>
             );
           })}
