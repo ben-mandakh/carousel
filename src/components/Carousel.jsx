@@ -76,14 +76,12 @@ function Carousel({ images }) {
               ></div>
             );
           })}
-          <div>
             <img
               className="pause-icon"
               src={PauseIcon}
               alt="pause-icon"
               onClick={() => setAutoPlay(false)}
             />
-          </div>
         </div>
       </div>
     </div>
